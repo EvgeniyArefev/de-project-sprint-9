@@ -2,11 +2,9 @@ import os
 
 from lib.kafka_connect import KafkaConsumer, KafkaProducer
 from lib.pg import PgConnect
-from dotenv import load_dotenv
 
 class AppConfig:
-    load_dotenv()
-    CERTIFICATE_PATH = r"C:\Users\Evgeniy\.kafka\YandexInternalRootCA.crt"
+    CERTIFICATE_PATH = '/crt/YandexInternalRootCA.crt'
 
     def __init__(self) -> None:
 
