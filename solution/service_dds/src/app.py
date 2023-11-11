@@ -24,6 +24,7 @@ if __name__ == '__main__':
 
     proc = DdsMessageProcessor( 
         consumer=config.kafka_consumer(),
+        producer=config.kafka_producer(),
         dds_repository=DdsRepository(config.pg_warehouse_db()),
         logger=app.logger
     )
