@@ -8,6 +8,12 @@
 
 Бизнес-задача — «тегирование гостей» ресторана на основне данных по завершенным заказам.
 
+### Ссылки на реджестри
+
+Service STG `cr.yandex/crpil6ehat9c4rl4hcps/stg_service`  
+Service DDS `cr.yandex/crpil6ehat9c4rl4hcps/dds_service`  
+Service CDM `cr.yandex/crpil6ehat9c4rl4hcps/cdm_service`
+
 ### Исопользуемые технологии
 
 - `Yandex Cloud` (облачный провайдер, на нём будут развернуты все технологии)
