@@ -23,11 +23,16 @@ class DdsMessageProcessor:
         self._logger.info(f"{datetime.utcnow()}: START")
 
         for _ in range(self._batch_size):
+
             msg = self._consumer.consume()
             if not msg:
                 break
 
             payload = msg['payload']
+
+            #берем только закрытые статусы
+            if payload['status'] != 'CLOSED':
+                break
 
             load_dt = datetime.now()
             load_src = self._consumer.topic
